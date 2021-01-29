@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Redressed&family=Xanh+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #158cba;
+  color: white;
+  min-height: 100vh;
+  text-align: center;
+}
+.head {
+  display: flex;
+  max-width: 80vw;
+  margin: 20px auto;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 2em;
+  background: white;
+  color: #184a45ff;
+  box-shadow: 18px 18px 24px 5px rgba(0, 0, 0, 0.83);
+  -webkit-box-shadow: 18px 18px 24px 5px rgba(0, 0, 0, 0.83);
+  -moz-box-shadow: 18px 18px 24px 5px rgba(0, 0, 0, 0.83);
+}
+
+.formstyle {
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  /* outline: 3px solid red; */
+}
+form {
+  display: flex;
+  align-items: center;
+  width: 65%;
+  margin: 0 auto;
+  cursor: none;
+}
+form input {
+  font-size: 1em;
+  border: none;
+  outline: none;
+  border: none;
+  padding: 3px;
+  min-width: 100%;
+  padding-left: 20px;
+  /* font-family: "Redressed", cursive; */
+  font-family: "Poppins", sans-serif;
+  box-shadow: 18px 18px 24px 5px rgba(0, 0, 0, 0.83);
+  -webkit-box-shadow: 18px 18px 24px 5px rgba(0, 0, 0, 0.83);
+  -moz-box-shadow: 18px 18px 24px 5px rgba(0, 0, 0, 0.83);
+}
+form input:focus::placeholder {
+  border: none;
+  opacity: 0.4;
+}
+.btn,
+.confirm-btn,
+.delete-btn {
+  padding: 0;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.btn:focus {
+  outline: none;
+}
+.done {
+  font-size: 1.8rem;
+  color: #184a45ff;
+  background-color: white;
+}
+.done:hover {
+  color: rgb(59, 116, 110);
+}
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 65vw;
+  background: white;
+  color: #184a45ff;
+  text-align: left;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+.todo-task {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6vh;
+  margin-left: 2.4vw;
+}
+.task li {
+  flex: 1;
+}
+.task-list {
+  display: flex;
+  flex-direction: column;
+}
+.list-item {
+  list-style: none;
+  padding: 3px;
+  padding-left: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.confirm-btn,
+.delete-btn {
+  font-size: 1.5rem;
+  color: #184a45ff;
+  background-color: white;
+  border: none;
+  margin-right: 0.5rem;
+}
+.confirm-btn:focus,
+.delete-btn:focus {
+  outline: none;
+}
+.confirm-btn:hover,
+.delete-btn:hover {
+  color: rgb(59, 116, 110);
+}
+.completed {
+  background-color: #9ed96c;
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+.completed button {
+  background-color: #9ed96c;
+}
+.ok {
+  pointer-events: none;
+}
+.deleted {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
