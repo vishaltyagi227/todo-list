@@ -12,7 +12,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #158cba;
+  background-color: #fff;
   color: white;
   min-height: 100vh;
   text-align: center;
@@ -29,9 +29,9 @@ body {
   font-size: 2em;
   background: white;
   color: #184a45ff;
-  box-shadow: 18px 18px 24px 5px rgba(0, 0, 0, 0.83);
-  -webkit-box-shadow: 18px 18px 24px 5px rgba(0, 0, 0, 0.83);
-  -moz-box-shadow: 18px 18px 24px 5px rgba(0, 0, 0, 0.83);
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.75);
 }
 
 .formstyle {
@@ -57,9 +57,9 @@ form input {
   padding-left: 20px;
   /* font-family: "Redressed", cursive; */
   font-family: "Poppins", sans-serif;
-  box-shadow: 18px 18px 24px 5px rgba(0, 0, 0, 0.83);
-  -webkit-box-shadow: 18px 18px 24px 5px rgba(0, 0, 0, 0.83);
-  -moz-box-shadow: 18px 18px 24px 5px rgba(0, 0, 0, 0.83);
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.75);
 }
 form input:focus::placeholder {
   border: none;
@@ -76,6 +76,9 @@ form input:focus::placeholder {
 }
 .btn:focus {
   outline: none;
+}
+.btn {
+  margin: 20px;
 }
 .done {
   font-size: 1.8rem;
@@ -95,6 +98,7 @@ form input:focus::placeholder {
   text-align: left;
   margin-bottom: 10px;
   transition: all 0.3s ease;
+  position: relative;
 }
 .todo-task {
   display: flex;
@@ -115,6 +119,17 @@ form input:focus::placeholder {
   padding: 3px;
   padding-left: 20px;
   font-family: "Poppins", sans-serif;
+  position: relative;
+}
+.list-item::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.8;
 }
 .confirm-btn,
 .delete-btn {
